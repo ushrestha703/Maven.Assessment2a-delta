@@ -9,6 +9,10 @@ package rocks.zipcode.assessment2.generics;
  * Shelter<Dog> dogHouse = new Shelter<Dog>();
  */
 public class Shelter<_> {
+
+//    Shelter<Person> farmHouse = new Shelter<Person>();
+//    Shelter<Dog> dogHouse = new Shelter<Dog>();
+
     public Shelter() {
         throw new NullPointerException();
     }
@@ -17,6 +21,7 @@ public class Shelter<_> {
      * @return the number of item in the shelter
      */
     public int size() {
+
         return -1;
     }
 
@@ -24,6 +29,7 @@ public class Shelter<_> {
     }
 
     public Boolean contains(Object object) {
+
         return null;
     }
 
@@ -31,10 +37,12 @@ public class Shelter<_> {
     }
 
     public Object get(Integer index) {
+
         return null;
     }
 
     public Integer getIndexOf(Object ageable) {
+
         return 0;
     }
 }
