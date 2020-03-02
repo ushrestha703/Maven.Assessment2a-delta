@@ -11,7 +11,13 @@ public class StringUtils {
      */
     public static String padLeft(String stringToBePadded, int amountOfPadding) {
 
-        return null;
+        StringBuilder sb = new StringBuilder();
+        int count = amountOfPadding - stringToBePadded.length();
+        for (int i = 0; i < count; i++) {
+            sb.append(' ');
+        }
+        sb.append(stringToBePadded);
+        return sb.toString();
     }
 
     /**
@@ -20,7 +26,15 @@ public class StringUtils {
      * @return `stringToBePadded` flushed right by right-padding
      */
     public static String padRight(String stringToBePadded, int amountOfPadding) {
-        return null;
+
+        StringBuilder sb = new StringBuilder();
+        sb.append(stringToBePadded);
+        int count = amountOfPadding - stringToBePadded.length();
+        for (int i = 0; i < count; i++) {
+            sb.append(' ');
+        }
+        return sb.toString();
+
     }
 
     /**
