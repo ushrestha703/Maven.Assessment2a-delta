@@ -50,7 +50,21 @@ public class Person {
     }
 
     @Override
-    public boolean equals(Object o) {
-        return (Boolean)null;
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address=" + address +
+                '}';
     }
+
+    @Override
+//    public boolean equals(Object o) {
+//        return (this.toString().equals(((Person) o).toString()));
+//    }
+
+        public boolean equals(Object o) {
+        return this.toString().equals(o.toString());
+    }
+
 }

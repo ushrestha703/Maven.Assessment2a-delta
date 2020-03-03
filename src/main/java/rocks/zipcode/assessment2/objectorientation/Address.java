@@ -72,7 +72,18 @@ public class Address {
     }
 
     @Override
+    public String toString() {
+        return "Address{" +
+                "addressLine1='" + addressLine1 + '\'' +
+                ", addressLine2='" + addressLine2 + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", zipcode='" + zipcode + '\'' +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
-        return (Boolean)null;
+        return this.toString().equals(o.toString());
     }
 }

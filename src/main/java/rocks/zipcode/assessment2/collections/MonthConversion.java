@@ -29,14 +29,22 @@ public class MonthConversion {
      * @param monthName - name of month
      * @return - the ordinal of the month in the year
      */
-    public int getNumber(String monthName) {
+    public Integer getNumber(String monthName) {
         // Need to work on this. :(
 
+    for ( Map.Entry<Integer,String> set : month.entrySet() ) {
+       if ( set.getValue().equals(monthName)) {
+            return set.getKey();
+        }
+    }
+
+   return null;
+
+
  //************************************
-        //return (Integer)month.getKey(monthName);
+      //  return (Integer)month.getkey(monthName);
 //*********************************
-        return (Integer)null;
-// ***************************
+
     }
 
     /**
